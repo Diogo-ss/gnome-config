@@ -20,9 +20,6 @@ headerbar {
     padding: 0px;
 }' > /home/$USER/.config/gtk-3.0/gtk.css
 
-## Intala programas
-sudo apt install gnome-tweaks
-
 ## Flatpak Instalação
 sudo apt install flatpak
 sudo add-apt-repository ppa:flatpak/stable
@@ -33,16 +30,16 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 ## Meus apps
 sudo snap remove firefox
-sudo apt install git node-typescript make
+sudo apt install git node-typescript make gnome-tweaks neovim nodejs npm curl
+sudo snap install authy
+sudo apt-get install manpages-dev
 
-## flatpak install flathub com.discordapp.Discord
+flatpak install flathub com.discordapp.Discord
 flatpak install flathub com.mattjakeman.ExtensionManager
 flatpak install flathub org.mozilla.firefox
 
-## Extensões
-gnome-extensions disable ubuntu-dock@ubuntu.com
-
 array=(
+sound-output-device-chooser@kgshank.net
 dash-to-panel@jderose9.github.com
 user-theme@gnome-shell-extensions.gcampax.github.com
 blur-my-shell@aunetx clipboard-history@alexsaveau.dev
@@ -64,8 +61,46 @@ do
     rm ${EXTENSION_ID}.zip
 done
 
-## Ícones
+## Tema Download
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
+
+## Ajuste do tema
+gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+gsettings set org.gnome.desktop.interface cursor-theme "DMZ-White"
+gsettings set org.gnome.desktop.interface gtk-theme "Tokyonight-Dark-BL-Legacy-Buttons"
+
+## Ajuste de extensões
+## Just-perfection
+dconf write /org/gnome/shell/extensions/just-perfection/dash-separator false
+dconf write /org/gnome/shell/extensions/just-perfection/activities-button false
+dconf write /org/gnome/shell/extensions/just-perfection/show-apps-button false
+
+## Dash-to-dock-cosmic
+dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height false
+dconf write /org/gnome/shell/extensions/dash-to-dock/dock-position "'BOTTOM'"
+dconf write /org/gnome/shell/extensions/dash-to-dock/dash-max-icon-size 26
+dconf write /org/gnome/shell/extensions/dash-to-dock/running-indicator-style "'DASHES'"
+
+## Sound
+dconf write /org/gnome/shell/extensions/sound-output-device-chooser/expand-volume-menu false
+
+## Oculta icones na barra superior
+dconf write /org/gnome/shell/extensions/emoji-selector/always-show false
+dconf write /org/gnome/shell/extensions/clipboard-history/display-mode 3
+
+## Desativa extensões
+gnome-extensions disable dash-to-panel@jderose9.github.com
+gnome-extensions disable ubuntu-dock@ubuntu.com
+
+## Atalhos
+gsettings set org.gnome.shell.keybindings toggle-message-tray "[]"
+dconf write /org/gnome/shell/extensions/clipboard-history/toggle-menu "['<Super>v']"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/home "['<Super>e']"
+
+## Remove arqivos desnecessários
+rm -rf /home/$USER/Tokyo-Night-GTK-Theme
+rm '/home/$USER/Downloads/rounded-window-corners@yilozt.zip' '/home/$USER/Downloads/soft-brightness@fifi.org.zip' '/home/$USER/Downloads/just-perfection-desktop@just-perfection.zip' '/home/$USER/Downloads/gsconnect@andyholmes.github.io.zip' '/home/$USER/Downloads/emoji-selector@maestroschan.fr.zip' '/home/$USER/Downloads/clipboard-history@alexsaveau.dev.zip' '/home/$USER/Downloads/blur-my-shell@aunetx.zip' '/home/$USER/Downloads/user-theme@gnome-shell-extensions.gcampax.github.com.zip' '/home/$USER/Downloads/dash-to-panel@jderose9.github.com.zip' '/home/$USER/Downloads/dash-to-dock-cosmic-@halfmexicanhalfamazing@gmail.com.zip' '/home/$USER/Downloads/dash-to-dock-cosmic@halfmexicanhalfamazing@gmail.com.zip'
+rm /home/$USER/Downloads/sound-output-device-chooserkgshank.net.v43.shell-extension.zip
 
 ## POP Shel WM
 git clone https://github.com/pop-os/shell.git
