@@ -64,6 +64,9 @@ done
 ## Tema Download
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
 
+git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme &&
+mv Tokyo-Night-GTK-Theme/themes/Tokyonight-Storm-BL-Legacy-Buttons /home/$USER/.themes
+
 ## Ajuste do tema
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 gsettings set org.gnome.desktop.interface cursor-theme "DMZ-White"
@@ -98,11 +101,28 @@ dconf write /org/gnome/shell/extensions/clipboard-history/toggle-menu "['<Super>
 dconf write /org/gnome/settings-daemon/plugins/media-keys/home "['<Super>e']"
 
 ## Remove arqivos desnecessários
-rm -rf /home/$USER/Tokyo-Night-GTK-Theme
-rm '/home/$USER/Downloads/rounded-window-corners@yilozt.zip' '/home/$USER/Downloads/soft-brightness@fifi.org.zip' '/home/$USER/Downloads/just-perfection-desktop@just-perfection.zip' '/home/$USER/Downloads/gsconnect@andyholmes.github.io.zip' '/home/$USER/Downloads/emoji-selector@maestroschan.fr.zip' '/home/$USER/Downloads/clipboard-history@alexsaveau.dev.zip' '/home/$USER/Downloads/blur-my-shell@aunetx.zip' '/home/$USER/Downloads/user-theme@gnome-shell-extensions.gcampax.github.com.zip' '/home/$USER/Downloads/dash-to-panel@jderose9.github.com.zip' '/home/$USER/Downloads/dash-to-dock-cosmic-@halfmexicanhalfamazing@gmail.com.zip' '/home/$USER/Downloads/dash-to-dock-cosmic@halfmexicanhalfamazing@gmail.com.zip'
-rm /home/$USER/Downloads/sound-output-device-chooserkgshank.net.v43.shell-extension.zip
+rm -rf /home/$USER/gnome-config
 
 ## POP Shel WM
-git clone https://github.com/pop-os/shell.git
-cd shell
+pause ()
+{
+REPLY=Y
+while [ "$REPLY" == "Y" ] || [ "$REPLY" != "y" ]
+do
+ echo -e "Deseja instalar o POP Shell [y/n]" 
+ read -n1 -s
+     case "$REPLY" in
+     "n")  clear && echo "Prontoo!" && exit       	;;
+     "N")  clear && echo "Prontoo!" && exit       	;; 
+     "y")  clear                     	          	;;
+     "Y")  REPLY=y 					;;
+     * )  clear && echo "$REPLY Opcão inválida."  	;;
+esac
+done
+}
+pause
+clear
+echo "Instalando POP Shell"
+git clone https://github.com/pop-os/shell.git /home/$USER/POP-SELL-TMP
+cd /home/$USER/POP-SELL-TMP
 make local-install
