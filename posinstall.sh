@@ -31,10 +31,10 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 ## Meus apps
 sudo snap remove firefox
 sudo apt install git node-typescript make gnome-tweaks neovim nodejs npm curl
-sudo snap install authy
+## sudo snap install authy
 sudo apt-get install manpages-dev
 
-flatpak install flathub com.discordapp.Discord
+## flatpak install flathub com.discordapp.Discord
 flatpak install flathub com.mattjakeman.ExtensionManager
 flatpak install flathub org.mozilla.firefox
 
