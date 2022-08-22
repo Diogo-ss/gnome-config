@@ -70,6 +70,7 @@ git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme /home/$USER/
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 gsettings set org.gnome.desktop.interface cursor-theme "DMZ-White"
 gsettings set org.gnome.desktop.interface gtk-theme "Tokyonight-Dark-BL-Legacy-Buttons"
+dconf write /org/gnome/shell/extensions/user-theme/name "'Tokyonight-Dark-BL-Legacy-Buttons'"
 
 ## Ajuste de extensões
 ## Just-perfection
@@ -100,28 +101,11 @@ dconf write /org/gnome/shell/extensions/clipboard-history/toggle-menu "['<Super>
 dconf write /org/gnome/settings-daemon/plugins/media-keys/home "['<Super>e']"
 
 ## Remove arqivos desnecessários
-rm -rf /home/$USER/gnome-config
+## rm -rf /home/$USER/gnome-config
 
 ## POP Shel WM
-pause ()
-{
-REPLY=Y
-while [ "$REPLY" == "Y" ] || [ "$REPLY" != "y" ]
-do
- echo -e "Deseja instalar o POP Shell [y/n]" 
- read -n1 -s
-     case "$REPLY" in
-     "n")  clear && echo "Prontoo!" && exit       	;;
-     "N")  clear && echo "Prontoo!" && exit       	;; 
-     "y")  clear                     	          	;;
-     "Y")  REPLY=y 					;;
-     * )  clear && echo "$REPLY Opcão inválida."  	;;
-esac
-done
-}
-pause
 clear
 echo "Instalando POP Shell"
-git clone https://github.com/pop-os/shell.git /home/$USER/POP-SELL-TMP
-cd /home/$USER/POP-SELL-TMP
+git clone https://github.com/pop-os/shell.git
+cd shell
 make local-install
