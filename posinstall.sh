@@ -78,6 +78,9 @@ dconf write /org/gnome/shell/extensions/just-perfection/dash-separator false
 dconf write /org/gnome/shell/extensions/just-perfection/activities-button false
 dconf write /org/gnome/shell/extensions/just-perfection/show-apps-button false
 
+## Ding
+dconf write /org/gnome/shell/extensions/ding/show-home false
+
 ## Dash-to-dock-cosmic
 dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height false
 dconf write /org/gnome/shell/extensions/dash-to-dock/dock-position "'BOTTOM'"
