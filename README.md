@@ -3,3 +3,4 @@
 ``` shell
 git clone https://github.com/Diogo-ss/gnome-config.git && cd gnome-config && bash posinstall.sh
 ```
+#### Use por reposabilidade própia
