@@ -93,7 +93,7 @@ dconf write /org/gnome/shell/extensions/clipboard-history/display-mode 3
 
 ## Desativa extensões
 gnome-extensions disable dash-to-panel@jderose9.github.com
-gnome-extensions disable ubuntu-dock@ubuntu.com
+## gnome-extensions disable ubuntu-dock@ubuntu.com
 
 ## Atalhos
 gsettings set org.gnome.shell.keybindings toggle-message-tray "[]"
