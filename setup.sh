@@ -13,8 +13,7 @@ blur-my-shell@aunetx clipboard-history@alexsaveau.dev
 emoji-selector@maestroschan.fr
 gsconnect@andyholmes.github.io
 just-perfection-desktop@just-perfection
-soft-brightness@fifi.org
-rounded-window-corners@yilozt)
+soft-brightness@fifi.org)
 
 for i in "${array[@]}"
 do
