@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## Erro
+
 ## Extensões
 array=(
 sound-output-device-chooser@kgshank.net
