@@ -11,4 +11,4 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 ## Meus apps
 clear
 echo -e "[*] Instalando apps"
-sh ./apps.sh
+sh ./scripts/apps.sh
