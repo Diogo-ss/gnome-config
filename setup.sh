@@ -2,7 +2,7 @@
 
 sudo apt update && sudo apt upgrade;
 clear
-echo -e "[*] Iniciando Instalação."
+echo -e "[*] Iniciando Instalação - pode demonarar minutos."
 
 ## Extensões
 array=(
