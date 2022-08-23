@@ -12,4 +12,4 @@ flatpak install flathub org.mozilla.firefox
 # Extensões
 clear
 echo -e "[*] Instalando extensões"
-sh ./extension.sh
+sh ./scripts/extension.sh
