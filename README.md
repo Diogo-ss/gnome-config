@@ -27,4 +27,4 @@ cd gnome-config && chmod +x setup.sh
 <a href="https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme <br>" target="_blank"> Tokyo Night GTK-Theme<a> - Theme <p>
 <a href="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme.git" target="_blank"> Papirus icon<a>  - Icons <p>
 
-> **Note** : Use the scripts at your own risk
+> **Note** : Use the scripts at your own risk - v1.0.1
