@@ -72,4 +72,4 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/home "['<Super>e']"
 # POP Shell
 clear
 echo -e "[*] POP Shell"
-sh ./pop-shell.sh
+sh ./scripts/pop-shell.sh
