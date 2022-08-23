@@ -1,6 +1,15 @@
 <details>
-<summary><b>screenshot</b></summary>
+<summary><b>Wallpaper</b></summary>
+<p align="left">
+  <img src="https://github.com/Diogo-ss/gnome-config/blob/main/wallpaper/Wallpaper.jpg" width="350" alt="img">
+</p>
+</details>
 
+<details>
+<summary><b>Screenshot</b></summary>
+<p align="left">
+  <img src="https://github.com/Diogo-ss/gnome-config/blob/main/wallpaper/Wallpaper.jpg" width="350" alt="img">
+</p>
 </details>
 
 # Post installation script for Gnome 42.
