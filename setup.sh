@@ -7,4 +7,4 @@ echo -e "[*] Iniciando Instalação."
 ## Iniciando Flatpak
 clear
 echo -e "[*] Iniciando Flatpak"
-sh ./../gnome-config/scripts/Flatpak.sh
+sh ./scripts/Flatpak.sh
