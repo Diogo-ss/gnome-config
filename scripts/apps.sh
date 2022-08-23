@@ -14,8 +14,7 @@ clear
 echo "[*] Instalando extensões"
 
 ## Extensões - no array
-array=(
-sound-output-device-chooser@kgshank.net
+array=(sound-output-device-chooser@kgshank.net
 dash-to-panel@jderose9.github.com
 user-theme@gnome-shell-extensions.gcampax.github.com
 blur-my-shell@aunetx clipboard-history@alexsaveau.dev
