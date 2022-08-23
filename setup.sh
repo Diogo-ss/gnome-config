@@ -4,4 +4,4 @@ sudo apt update && sudo apt upgrade;
 
 echo -e "[*] Iniciando Instalação."
 
-sh ./scripts/extensionsh
+sh ./scripts/extension.sh
