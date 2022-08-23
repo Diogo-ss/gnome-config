@@ -1,28 +1,21 @@
-<details>
-<summary><b>Wallpaper</b></summary>
-<p align="left">
-  <img src="https://github.com/Diogo-ss/gnome-config/blob/main/wallpaper/Wallpaper.jpg" width="350" alt="img">
-</p>
-</details>
+# Better look Gnome 42 👻
 
 <details>
 <summary><b>Screenshot</b></summary>
-<p align="left">
-  <img src="https://github.com/Diogo-ss/gnome-config/blob/main/wallpaper/Wallpaper.jpg" width="350" alt="img">
+<p align="center">
+  <img src="https://github.com/Diogo-ss/gnome-config/blob/main/screenshot/screenshot.png?raw=true" width="500" alt="img">
 </p>
 </details>
 
-# Post installation script for Gnome 42.
-
-Clone this repository
+- Clone this repository
 ``` shell
 git clone https://github.com/Diogo-ss/gnome-config.git
 ```
-Change to cloned and make executable
+- Change to cloned and make executable
 ``` shell
 cd gnome-config && chmod +x setup.sh
 ```
-Run to install
+- Run to install
 ``` shell
 ./setup.sh
 ```
