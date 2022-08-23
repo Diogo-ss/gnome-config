@@ -27,4 +27,4 @@ done
 ## Aplicando configurações
 clear
 echo -e "[*] Aplicando configurações"
-sh ./config.sh
+sh ./scripts/config.sh
