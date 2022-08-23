@@ -7,4 +7,4 @@ echo -e "[*] Iniciando Instalação."
 ## Iniciando Flatpak
 clear
 echo -e "[*] Iniciando Flatpak"
-sh ./scripts/Flatpak.sh
+sh ./scripts/flatpak.sh
