@@ -24,7 +24,7 @@ do
     rm ${EXTENSION_ID}.zip
 done
 
-## Aplicando configurações
+## Iniciando Flatpak
 clear
-echo "[*] Aplicando configurações"
-sh ./scripts/config.sh
+echo -e "[*] Iniciando Flatpak"
+sh ./scripts/flatpak.sh
