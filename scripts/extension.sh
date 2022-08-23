@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-## Extensões - no array
+## Extensões
 array=(
 sound-output-device-chooser@kgshank.net
 dash-to-panel@jderose9.github.com
