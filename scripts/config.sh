@@ -25,7 +25,9 @@ border-radius: 3px;
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
 
 ## Tema - TKN
-mv /home/$USER/gnome-config/theme/Tokyonight-Storm-BL-Legacy-Buttons /home/$USER/.themes
+## mv /home/$USER/gnome-config/theme/Tokyonight-Storm-BL-Legacy-Buttons /home/$USER/.themes
+git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme /home/$USER/TKN &&
+mv /home/$USER/TKN/themes/Tokyonight-Dark-BL-Legacy-Buttons /home/$USER/.themes && rm -rf /home/$USER/TKN
 
 ## Ajuste do tema
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
