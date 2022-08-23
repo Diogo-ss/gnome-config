@@ -1,3 +1,8 @@
+<details>
+<summary><b>screenshot</b></summary>
+
+</details>
+
 # Post installation script for Gnome 42.
 
 Clone this repository
