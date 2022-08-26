@@ -33,8 +33,8 @@ git clone https://github.com/vinceliuice/Graphite-gtk-theme && ./Graphite-gtk-th
 ## Ajuste do tema
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 gsettings set org.gnome.desktop.interface cursor-theme "DMZ-White"
-gsettings set org.gnome.desktop.interface gtk-theme "Tokyonight-Dark-BL-Legacy-Buttons"
-dconf write /org/gnome/shell/extensions/user-theme/name "'Tokyonight-Dark-BL-Legacy-Buttons'"
+gsettings set org.gnome.desktop.interface gtk-theme "Graphite-blue-Dark-nord"
+dconf write /org/gnome/shell/extensions/user-theme/name "'Graphite-blue-Dark-nord'"
 
 ## Ajuste de extensões
 ## Just-perfection
