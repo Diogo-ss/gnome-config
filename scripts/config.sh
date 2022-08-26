@@ -60,7 +60,7 @@ dconf write /org/gnome/shell/extensions/emoji-selector/always-show false
 dconf write /org/gnome/shell/extensions/clipboard-history/display-mode 3
 
 ## Terminal
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh)"
+## bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh)"
 
 ## Desativa extensões
 ## gnome-extensions disable ubuntu-dock@ubuntu.com
