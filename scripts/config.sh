@@ -18,7 +18,7 @@ headerbar {
 }
 
 decoration, window, window.background, window.titlebar, * {
-border-radius: 3px;
+border-radius: 4px;
 }' > /home/$USER/.config/gtk-3.0/gtk.css
 
 ## Icones
