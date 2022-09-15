@@ -1,4 +1,4 @@
-## Better look GNOME 42 👻
+## Better look GNOME 42 👻 - Ubuntu and Debian
 
 <details>
 <summary><b>Screenshot</b></summary>
